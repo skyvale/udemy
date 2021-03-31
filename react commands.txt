@@ -1,0 +1,58 @@
+REACT COMMANDS
+
+Create new react app:
+> `npx create-react-app app-name`
+
+Start app:
+> make sure you are cd to the app folder in terminal
+> `npm start`
+
+-----
+
+REACT NOTES
+
+Organization Rules:
+> Make sure to create an 'assets' folder (for images), a 'container' folder (for things
+like app.js and app.css), and a 'components' folder!
+> Components and Component folders should be named with a capital letter.
+
+Other React Rules:
+> Try to use only a FEW stateful components. The majority of your components
+should be stateless components!
+
+-----
+
+REACT JARGON
+
+Stateful/Smart/Container Components
+> A component that manages states. Before React v16, stateful referred only to
+class based components. However, since now React Hooks can be used in both class
+and function components, a stateful component is just any component that manages
+the state.
+
+Stateless/Dumb/Presentational Components
+> A component that DOES NOT manage states.
+
+Class-based Components
+> ex. `class App extends Component { ... }`
+
+
+Functional Components
+> ex. `const app = (props) => { ... }`
+
+
+-----
+
+PACKAGES
+
+Radium
+> A package that allows you to use inline styles and media queries with React
+> `npm install --save radium`
+> import Radium from 'radium'; (at top of file)
+> export default Radium(App);
+
+Styled Components
+> A library that is an alternative to using React CSS modules
+> `npm install --save styled-components`
+> import styled from 'styled-components';
+> *note* it uses the tagged template literal syntax from javascript (eg. styled.div``)
